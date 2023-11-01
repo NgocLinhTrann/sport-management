@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <ImageView
+            android:id="@+id/btn_admin_khachhang_info_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"/>
+        <TextView
+            android:id="@+id/layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Thông tin khách hàng"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="23dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_admin_khachhang_info_anh"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout_title"
+            android:src="@drawable/profile"
+            />
+        <TextView
+            android:id="@+id/tv_admin_khachhang_info_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_admin_khachhang_info_anh"
+            android:text="Tên khách hàng"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:id="@+id/edt_admin_khachhang_info_tenkh"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_admin_khachhang_info_ten"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tv_sl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_khachhang_info_tenkh"
+            android:text="Số điện thoại"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:id="@+id/edt_admin_khachhang_info_sdt"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sl"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/tv_gia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_khachhang_info_sdt"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_admin_khachhang_info_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_gia"
+            android:layout_marginLeft="30dp"
+            android:singleLine="false"
+            android:textSize="18dp"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_admin_khachhang_info_birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_khachhang_info_email"
+            android:text="Ngày sinh"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/edt_admin_khachhang_info_birthdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_admin_khachhang_info_birthdate"
+            android:layout_marginLeft="30dp"
+            android:singleLine="false"
+            android:textSize="18dp"
+            android:inputType="number" />
+        <Button
+            android:id="@+id/btn_admin_douong_themdouong_add"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_khachhang_info_email"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_button"
+            android:text="Thêm"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            app:backgroundTint="#50C878" />
+
+    </RelativeLayout>
+</ScrollView>

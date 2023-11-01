@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame1"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@drawable/frame_background"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imv_khachhang_chonsan_anhsan"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sb5n" />
+
+    <TextView
+        android:id="@+id/tv_khachhang_chonsan_tensan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_khachhang_chonsan_anhsan"
+        android:layout_centerHorizontal="true"
+        android:text="Sân bóng 5 người"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+</RelativeLayout>
+
+
+</FrameLayout>

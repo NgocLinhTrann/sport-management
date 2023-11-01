@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sport Management App"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DangKi"
+
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"></activity>
+        <activity
+            android:name=".Login"></activity>
+        <activity
+            android:name=".Dangnhapthanhcong"></activity>
+        <activity
+            android:name=".Welcome"></activity>
+        <activity android:name=".KhachHang.DatSan"></activity>
+        <activity android:name=".KhachHang.ChiTietSan"></activity>
+        <activity android:name=".KhachHang.ChonDoUong"></activity>
+        <activity android:name=".KhachHang.ChiTietDoUong"></activity>
+        <activity android:name=".Admin.KhachHang.Menu"></activity>
+        <activity android:name=".Admin.San.Menu"/>
+        <activity android:name=".Admin.Douong.Menu"/>
+        <activity android:name=".Admin.Douong.ThemDoUong"/>
+        <activity android:name=".Admin.Douong.CapNhatDoUong"/>
+        <activity android:name=".Admin.San.ThemSan"/>
+        <activity android:name=".Admin.San.CapNhatSan"/>
+
+        <activity android:name=".KhachHang.ChonSan"/>
+
+        <activity android:name=".Calendar.CalendarActivity"/>
+        <activity android:name=".Calendar.WeekViewActivity"/>
+        <activity android:name=".Calendar.EventEditActivity"/>
+        <activity android:name=".Calendar.DailyCalendarActivity"/>
+        <activity android:name=".KhachHang.DatLichThanhCong"/>
+
+<!--        Thông tin user-->
+        <activity android:name=".KhachHang.ThongTinUser"/>
+
+<!--        Thanh toán-->
+        <activity android:name=".KhachHang.ThanhToan"
+            android:launchMode="singleTask"
+            android:exported="true">
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="demozpdk"
+                android:host="app" />
+        </intent-filter>
+    </activity>
+
+<!--        Thông tin đặt lịch-->
+        <activity android:name=".KhachHang.ThongTinDatLich"/>
+
+        <activity android:name=".KhachHang.ChiTietDatLich"/>
+
+        <activity android:name=".Admin.UserInfo"/>
+
+        <activity android:name=".Admin.KhachHang.CapNhatKhachHang"/>
+
+        <activity android:name=".Admin.DatLich.Menu"/>
+
+        <activity android:name=".Admin.DatLich.ChiTietDatLichAdmin"/>
+
+        <activity android:name=".KhachHang.CapNhatThongTinUser"/>
+
+</application>
+
+</manifest>

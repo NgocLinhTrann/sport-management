@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F2F3F2" /> <!-- Màu sắc mới của button -->
+    <corners android:radius="20dp" /> <!-- Bo góc cho button -->
+</shape>

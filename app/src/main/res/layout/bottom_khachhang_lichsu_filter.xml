@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottom_dialog"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_khachhang_lichsu_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Trạng thái"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="13dp"/>
+    <RadioGroup
+        android:id="@+id/radiogr_khachang_lichsu_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_khachhang_lichsu_filter"
+        android:layout_marginLeft="17dp"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_booking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đang đặt"/>
+        <RadioButton
+            android:id="@+id/radio_booked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã đặt"/>
+        <RadioButton
+            android:id="@+id/radio_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã thanh toán"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_khachhang_lichsu_filter"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogr_khachang_lichsu_filter"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn_google"
+        app:backgroundTint="@color/green"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Áp dụng"/>
+</RelativeLayout>

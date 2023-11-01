@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_left_arrow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Thêm Khách hàng"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="23dp" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_chooser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_title"
+        android:src="@drawable/profile"
+         />
+    <TextView
+        android:id="@+id/tv_hoten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_chooser"
+        android:text="Họ và tên"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"/>
+    <EditText
+        android:id="@+id/edt_admin_douong_update_giatien"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hoten"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/tv_sdt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_admin_douong_update_giatien"
+        android:text="Số điện thoại"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"/>
+    <EditText
+        android:id="@+id/edt_admin_douong_update_sl"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sdt"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/tv_khachhang_userinfo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_admin_douong_update_sl"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_khachhang_userinfo_email"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/tv_gioitinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:text="Giới tính"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"/>
+    <RadioGroup
+        android:id="@+id/radio_gioitinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_gioitinh"
+        android:layout_marginLeft="30dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio_nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"
+            android:textColor="@color/black"
+            android:layout_marginLeft="75dp"/>
+        <RadioButton
+            android:id="@+id/radio_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"
+            android:textColor="@color/black"
+            android:layout_marginLeft="60dp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/tv_tuoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_gioitinh"
+        android:text="Tuổi"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="12dp"/>
+    <EditText
+        android:id="@+id/edt_tuoi"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_tuoi"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_tuoi"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:text="Thêm"
+        app:backgroundTint="#50C878"/>
+</RelativeLayout>
+</ScrollView>

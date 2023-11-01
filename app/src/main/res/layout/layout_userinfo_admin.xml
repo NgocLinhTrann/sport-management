@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_admin_userinfo_logOut"
+        android:layout_width="331dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_logout"
+        android:drawableLeft="@drawable/ic_logout"
+        android:text="Đăng xuất"
+        android:textAllCaps="false"
+        android:textColor="#53B175"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_admin_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/untitleddesign" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imv_admin_info_anh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    android:src="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/tv_admin_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nguyễn Tô Đức Tài"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imv_admin_info_anh"
+                    app:layout_constraintStart_toStartOf="@+id/imv_admin_info_anh"
+                    app:layout_constraintTop_toBottomOf="@+id/imv_admin_info_anh" />
+
+                <TextView
+                    android:id="@+id/tv_admin_info_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nguyentoductai@gmail.com"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_admin_info_name"
+                    app:layout_constraintStart_toStartOf="@+id/tv_admin_info_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_admin_info_name" />
+
+                <ImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imv_admin_info_anh"
+                    app:layout_constraintEnd_toEndOf="@+id/imv_admin_info_anh"
+                    app:layout_constraintStart_toStartOf="@+id/imv_admin_info_anh"
+                    app:srcCompat="@drawable/ic_camera" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_admin_info_email">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:cardElevation="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Đổi mật khẩu"
+                                android:textSize="21dp"
+                                android:layout_centerVertical="true"
+                                android:drawableStart="@drawable/ic_changepass"
+                                android:drawablePadding="13dp"
+                                android:drawableEnd="@drawable/ic_right_arrow"
+                                android:textColor="@color/black">
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_editProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginVertical="10dp"
+                        app:cardElevation="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chỉnh sửa thông tin"
+                                android:textSize="21dp"
+                                android:drawableStart="@drawable/ic_chinhsuathongtin"
+                                android:drawablePadding="13dp"
+                                android:layout_centerVertical="true"
+                                android:drawableEnd="@drawable/ic_right_arrow"
+                                android:textColor="@color/black">
+                            </TextView>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginVertical="10dp"
+                        app:cardElevation="7dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="10dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Hỗ trợ"
+                                android:textSize="21dp"
+                                android:drawableStart="@drawable/ic_help"
+                                android:drawablePadding="13dp"
+                                android:layout_centerVertical="true"
+                                android:drawableEnd="@drawable/ic_right_arrow"
+                                android:textColor="@color/black">
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_admin_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/admin_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

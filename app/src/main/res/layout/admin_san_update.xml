@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_admin_san_update_goback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Thông tin Sân"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_idkhachhang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_title"
+            android:text="Mã sân"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:id="@+id/edt_admin_san_update_id"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_idkhachhang"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:enabled="false"/>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_san_update_id"
+            android:text="Tên sân"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:id="@+id/edt_admin_san_update_tensan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"/>
+        <TextView
+            android:id="@+id/tv_hoten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_san_update_tensan"
+            android:text="Giá tiền"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="12dp"/>
+        <EditText
+            android:id="@+id/edt_admin_san_update_giatien"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hoten"
+            android:layout_marginLeft="30dp"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+        <Button
+            android:id="@+id/btn_admin_san_update_capnhat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_admin_san_update_giatien"
+            android:layout_marginTop="60dp"
+            android:text="Cập nhật"
+            app:backgroundTint="#50C878"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/round_button"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_admin_san_update_xoa"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_admin_san_update_capnhat"
+            android:layout_below="@id/edt_admin_san_update_giatien"
+            android:layout_marginTop="60dp"
+            android:text="xóa"
+            app:backgroundTint="#FF0000"
+            android:background="@drawable/bg_btn_google"
+            android:layout_marginLeft="30dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar_admin_san_update"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

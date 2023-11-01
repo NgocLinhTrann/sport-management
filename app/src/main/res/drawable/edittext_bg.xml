@@ -1,0 +1,13 @@
+<!-- res/drawable/edittext_border.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <stroke android:color="#00FF00" android:width="2dp" /> <!-- Màu viền khi focus -->
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D6D4D4" /> <!-- Màu nền mặc định -->
+        </shape>
+    </item>
+</selector>

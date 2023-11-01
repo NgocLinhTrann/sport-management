@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btn_khachhang_chitietdouong_goback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="88dp"
+            android:text="Thông tin sản phẩm"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imv_khachhang_chitetdouong_anhdouong"
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-6dp"
+        android:src="@drawable/sp_cocalon"/>
+
+    <TextView
+        android:id="@+id/tv_khachhang_chitietdouong_tendouong"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_khachhang_chitetdouong_anhdouong"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="42dp"
+        android:text="Coca cola 325ml"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tv_khachhang_chitietdouong_gia"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imv_khachhang_chitetdouong_anhdouong"
+        android:layout_toRightOf="@id/tv_khachhang_chitietdouong_tendouong"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:text="12.000VND"
+        android:textSize="20sp"
+        android:textColor="#D35400"/>
+
+    <ImageButton
+        android:id="@+id/btn_khachang_chitietdouong_sub"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_below="@id/tv_khachhang_chitietdouong_tendouong"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icon_sub"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:background="@drawable/bg_btn_google"/>
+
+    <TextView
+        android:id="@+id/tv_khachhang_chitietdouong_sl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_khachhang_chitietdouong_tendouong"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="23dp"
+        android:text="0"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btn_khachang_chitietdouong_add"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_below="@id/tv_khachhang_chitietdouong_tendouong"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_btn_google"
+        android:src="@android:drawable/ic_input_add"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_khachhang_chitietdouong_thongtinsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_khachang_chitietdouong_add"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="25dp"
+        android:text="Thông tin sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_thongtinsp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_khachhang_chitietdouong_thongtinsp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="18dp"
+        android:text="Sản phẩm được làm từ các thành phần chất lượng cao, tạo ra một hương vị
+đặc trưng và hấp dẫn, mang đến cho bạn cảm giác tuyệt vời mỗi khi thưởng thức."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btn_khachang_chitietdouong_ThemDoUong"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_thongtinsp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@color/green"
+        android:background="@drawable/bg_btn_google"
+        android:text="Thêm sản phẩm" />
+    <ProgressBar
+        android:id="@+id/progressBar_khachhang_themDoUong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

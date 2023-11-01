@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_imv"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imv_khachhang_capnhatthongtin"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:src="@drawable/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/btn_khachhang_capnhatthongtin_addimg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imv_khachhang_capnhatthongtin"
+                app:layout_constraintStart_toStartOf="@+id/imv_khachhang_capnhatthongtin"
+                app:srcCompat="@drawable/ic_camera" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_imv"
+            android:textColor="#7C7C7C"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/edt_khachhang_capnhatthongtin_email"
+            android:layout_centerHorizontal="true"
+            android:layout_width="332dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtEmail"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/txtHoTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_below="@id/edt_khachhang_capnhatthongtin_email"
+            android:text="Họ và tên"
+            android:layout_marginLeft="20dp"
+            android:textColor="#7C7C7C"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt_khachhang_capnhatthongtin_hoten"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="329dp"
+            android:layout_height="34dp"
+            android:layout_below="@id/txtHoTen"
+            android:background="@drawable/edittext_bg"
+            android:hint="Nguyễn Văn A"
+            android:textStyle="italic" />
+
+
+
+        <TextView
+            android:id="@+id/txtGioiTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_khachhang_capnhatthongtin_hoten"
+            android:layout_marginTop="20dp"
+            android:text="Giới tính"
+            android:textColor="#7C7C7C"
+            android:layout_marginLeft="20dp"
+            android:textStyle="italic" />
+        <RadioGroup
+            android:id="@+id/genderRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtGioiTinh"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioBtNam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Nam" />
+            <RadioButton
+                android:id="@+id/radioBtNu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="Nữ" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textSdt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/genderRadio"
+            android:textColor="#7C7C7C"
+            android:layout_marginTop="20dp"
+
+            android:text="Số điện thoại"
+            android:layout_marginLeft="20dp"
+
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt_khachhang_capnhatthongtin_sdt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+
+            android:layout_width="332dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textSdt"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="phone" />
+        <TextView
+            android:id="@+id/txtNgaySinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_khachhang_capnhatthongtin_sdt"
+            android:text="Ngày sinh"
+            android:textColor="#7C7C7C"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt_khachhang_capnhatthongtin_ngaysinh"
+            android:layout_centerHorizontal="true"
+            android:layout_width="332dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtNgaySinh"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:inputType="date"
+            android:focusableInTouchMode="false"/>
+
+        <Button
+            android:id="@+id/btn_khachhang_capnhatthongtin_capnhat"
+            android:layout_marginTop="40dp"
+            android:layout_width="332dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edt_khachhang_capnhatthongtin_ngaysinh"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_btn_google"
+            app:backgroundTint="@color/green"
+            android:text="Cập nhật" />
+
+        <ProgressBar
+            android:id="@+id/progressBar_khachhang_capnhatthongtin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

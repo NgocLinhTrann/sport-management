@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/left_icon"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="88dp"
+            android:layout_toEndOf="@id/left_icon"
+            android:text="Thông tin sản phẩm"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-6dp"
+        android:src="@drawable/sp_cocalon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="290dp"
+        android:text="Coca cola 325ml"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="261dp"
+        android:layout_marginTop="292dp"
+        android:text="12.000VND"
+        android:textSize="20sp"
+        android:textColor="#D35400"/>
+
+    <Button
+        android:id="@+id/bt_subcoca2"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#3CB371"
+        android:drawableLeft="@drawable/icon_sub"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="345dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_addcoca2"
+        android:layout_width="44dp"
+        android:layout_height="37dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="#3CB371"
+        android:drawableLeft="@drawable/icon_add"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="420dp"
+        android:text="Thông tin sản phẩm"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_thongtinsp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="453dp"
+        android:text="Sản phẩm được làm từ các thành phần chất lượng cao, tạo ra một hương vị
+đặc trưng và hấp dẫn, mang đến cho bạn cảm giác tuyệt vời mỗi khi thưởng thức."
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnThemDoUong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_thongtinsp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="59dp"
+        android:backgroundTint="#3CB371"
+        android:text="Thêm sản phẩm" />
+
+
+</RelativeLayout>

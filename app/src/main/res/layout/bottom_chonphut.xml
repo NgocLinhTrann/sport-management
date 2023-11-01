@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_bottom_dialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn số phút"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <NumberPicker
+        android:id="@+id/numberpicker_khachhang_chitietsan_sophut"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_khachhang_chitietsan_huy"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_google"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Hủy"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#FF0000"
+        android:layout_below="@id/numberpicker_khachhang_chitietsan_sophut"/>
+    <Button
+        android:id="@+id/btn_khachhang_chitietsan_chon"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_google"
+        app:backgroundTint="#50C878"
+        android:text="Chọn"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/numberpicker_khachhang_chitietsan_sophut"
+        android:layout_toRightOf="@id/btn_khachhang_chitietsan_huy"/>
+</RelativeLayout>

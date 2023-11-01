@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "564134414626",
+    "firebase_url": "https://sport-management-app-default-rtdb.firebaseio.com",
+    "project_id": "sport-management-app",
+    "storage_bucket": "sport-management-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564134414626:android:20ab938c33c4ffbaa97d7b",
+        "android_client_info": {
+          "package_name": "com.example.dangki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564134414626-0cjclbsf9t9nvblopa2f78vs0g3k718h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxZz2x2PG1sGdE-WUN5r0aVZIOZTZsGEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564134414626-0cjclbsf9t9nvblopa2f78vs0g3k718h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
